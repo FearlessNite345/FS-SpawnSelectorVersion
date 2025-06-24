@@ -1,12 +1,13 @@
 name: Convert version.txt to version.json
 
 on:
-  permissions:
-    contents: write
   push:
     branches:
       - main # update if your default branch is different
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   generate-json:
